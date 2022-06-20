@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-{% load static %}
 <html lang="ko">
 
 <head>
@@ -7,7 +6,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
     </style>
     <title>Mid-Term-Project 32187505 이채은</title>
-    <link rel="stylesheet" href={% static 'project/css/style.css' %}>
+    <link rel="stylesheet" href="style.css">
 
     <script>
         var index = 0;   //이미지에 접근하는 인덱스
@@ -28,7 +27,11 @@
     x[index-1].style.display = "block";  //해당 인덱스는 block으로
     setTimeout(slideShow, 2000);   //함수를 4초마다 호출
  
-} 
+    } 
+
+    function opensource(){
+        alert("오픈소스");
+    }
 
 
     </script>
@@ -41,9 +44,9 @@
             <div>소프트웨어학과<br>32187505 이채은</div>
         </div>
         <div class="introduce_photo">
-            <img src={% static 'project/images/me.jpg' %} width="300" height="500" class="introduce_photo1"> 
-            <img src={% static 'project/images/spider1.jpg' %} width="300" height="500" class="introduce_photo2">
-            <img src={% static 'project/images/spider2.jpg' %} width="300" height="500" class="introduce_photo3">
+            <img src="me.jpg" width="300" height="500" class="introduce_photo1"> 
+            <img src="spider1.jpg" width="300" height="500" class="introduce_photo2">
+            <img src="spider2.jpg" width="300" height="500" class="introduce_photo3">
         </div>
     </div>
     
@@ -69,10 +72,28 @@
         </div>
     </div>
 
+    <div class="interest">
+        <h1 class="menu2">This Week's Study Topic</h1>
+        <h2>[ BLOCKCHAIN ]</h2>
+        <h3>블록들이 모여있는 체인 & 분산된 데이터베이스</h3>
+        <h3>
+            ① 추가만 가능한 데이터베이스<br>
+            ② 탈중앙화가 가능<br>
+            ③ 이전 블록에 새로운 블록을 연결하는 형태로 블록 체인이 생성됨 
+        </h3>
+        <h3>
+            블록들이 연결되는 방법으로 해시 함수를 사용<br>
+        </h3>
+        * 해시함수 : 데이터를 고정된 길이의 해시 값으로 출력하는 일방향 함수
+       
+        
+    </div>
+
+    <div class="study_list">---------------------</div>
 
     <div class="study">
-        <h2 class="menu2">studying</h2>
-        오픈소스SW활용<br>
+        <h1 class="menu3">Studying</h1>
+        <span onclick="opensource()" >오픈소스SW활용</span><br>
         운영체제<br>
         컴퓨터 네트워크<br>
         알고리즘<br>
@@ -83,15 +104,31 @@
         데이터마이닝<br>
     </div>
 
+    <div class="study_list">---------------------</div>
+
+    <div class="plan">
+        <h2 class="menu4">Summer Plan</h2>
+        자격증 따기<br>
+        운영체제 복습하기<br>
+        운전면허 연수받기<br>
+        알고리즘 특강듣기<br>
+        C++ 복습하기<br>
+        Python 알고리즘 풀기<br>
+        여행 가기<br>
+        운동 하기<br>
+        아르바이트 하기<br>
+    </div>
+
+
     <div class="slide">
         <div class="myslide">
-            <img src={% static 'project/images/slide1.jpg' %} width="300" height="450"> 
+            <img src="slide1.jpg" width="300" height="450"> 
         </div>    
         <div class="myslide">
-            <img src={% static 'project/images/slide2.jpg' %} width="300" height="450"> 
+            <img src="slide2.jpg" width="300" height="450"> 
         </div>
         <div class="myslide">
-            <img src={% static 'project/images/slide3.jpg' %} width="300" height="450"> 
+            <img src="slide3.jpg" width="300" height="450"> 
         </div>
     </div>
         
@@ -104,7 +141,4 @@
 
 </body>
 </html>
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
+
