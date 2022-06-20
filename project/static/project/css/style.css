@@ -1,0 +1,135 @@
+body{
+    font-family: 'Poor Story';
+    background-color: #fff0f5;
+    color: #3c3c3c;
+  }
+
+  .top{
+      height: 600px;
+      text-align: center;
+      background-color: #ffe4e1;
+      padding: 25px;
+      margin: 0 auto;
+      font-size: 50px;
+      font-weight: bold;
+      position: relative;
+      margin-bottom: 50px;
+      animation: imagesize 0.3s linear delay infi;
+  }
+
+  .introduce{
+    position: absolute;
+    z-index: 1;
+    top: 25%;
+    left: 13%;
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    padding-top: 90px;
+    line-height: 100px;
+    border: 5px solid #fff0f5;
+  }
+
+
+  .introduce_photo{
+    z-index: 2;
+    
+  }
+
+  .introduce_photo1{
+    position: absolute;
+    top: 17%;
+    left: 37%;
+  }
+
+  .introduce_photo2{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+  }
+
+  .introduce_photo3{
+    position: absolute;
+    top: 15%;
+    left: 65%;
+  }
+
+  .hello{
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+  }
+
+  .profile{
+    margin: 0 auto;
+    margin-top: 30px;
+    border: 5px solid #3c3c3c;
+    width: 1000px;
+    height: 380px;
+    padding: 20px;
+    margin-bottom: 50px;
+    transition : transform 0.4s ease-out;  
+  }
+
+  .profile:hover {
+    transform: scale(1.1);
+  }
+
+  .profile .menu{
+    border: 5px solid #3c3c3c;
+    padding : 10px;
+    width: 100px;
+    text-align: center;
+  }
+
+  .profile .mylist{
+    
+    font-size: 20px;
+    font-weight: bold;
+ 
+  }
+
+  a {
+    color: #3c3c3c;
+    text-decoration: none;
+  }
+
+  .study{
+    margin: 0 auto;
+    background-color: #3c3c3c;
+    color: #fff0f5;
+    width: 600px;
+    height: 600px;
+    text-align: center;
+    line-height: 50px;
+    padding-top: 30px;
+    transition : transform 0.4s ease-out
+  }
+
+  .study:hover{
+    color: #F58282;
+    transform: scale(1.1);
+  }
+
+  .study .menu2{
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .slide{
+   
+    text-align: center;
+    margin-top: 60px;
+   
+  }
+
+
+  .inform {
+    
+    text-align: left;
+    padding-left: 420px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+  }

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ko">
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+    </style>
+    <title>Mid-Term-Project 32187505 이채은</title>
+    <link rel="stylesheet" href={% static 'project/css/style.css' %}>
+
+    <script>
+        var index = 0;   //이미지에 접근하는 인덱스
+        window.onload = function(){
+        slideShow();
+    }
+    
+    function slideShow() {
+    var i;
+    var x = document.getElementsByClassName("myslide");  //slide1에 대한 dom 참조
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";   //처음에 전부 display를 none으로 한다.
+    }
+    index++;
+    if (index > x.length) {
+        index = 1;  //인덱스가 초과되면 1로 변경
+    }   
+    x[index-1].style.display = "block";  //해당 인덱스는 block으로
+    setTimeout(slideShow, 2000);   //함수를 4초마다 호출
+ 
+} 
+
+
+    </script>
+
+
+</head>
+<body>
+    <div class="top">
+        <div class="introduce">
+            <div>소프트웨어학과<br>32187505 이채은</div>
+        </div>
+        <div class="introduce_photo">
+            <img src={% static 'project/images/me.jpg' %} width="300" height="500" class="introduce_photo1"> 
+            <img src={% static 'project/images/spider1.jpg' %} width="300" height="500" class="introduce_photo2">
+            <img src={% static 'project/images/spider2.jpg' %} width="300" height="500" class="introduce_photo3">
+        </div>
+    </div>
+    
+    <div class="hello">
+        안녕하세요. 저는 단국대학교 소프트웨어학과에 재학 중인 이채은입니다.<br>
+        홈페이지 방문을 환영합니다:)<br>
+    </div>
+
+
+    <div class="profile">
+        <h2 class="menu">Profile</h2><br>
+        <div>
+            <ul class="mylist">
+                <li>이름 : 이채은</li>        
+                <li>생년월일 : 19980817</li>
+                <li>전공 : 소프트웨어학과</li>
+                <li>MBTI : INFP</li>
+                <li>좋아하는 것 : 컴퓨터 게임, 마블, 애니메이션, 바닐라라떼</li>
+                <li>싫어하는 것 : 아침에 일찍 일어나기</li>
+                <li>블로그 주소 : <a href="https://2chaechae.tistory.com/" target="_blank">https://2chaechae.tistory.com</a></li>
+                <li>깃허브 주소 : <a href="https://github.com/2CHAE-EUN" target="_blank">https://github.com/2CHAE-EUN</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="study">
+        <h2 class="menu2">studying</h2>
+        오픈소스SW활용<br>
+        운영체제<br>
+        컴퓨터 네트워크<br>
+        알고리즘<br>
+        자료구조<br>
+        프로그래밍<br>
+        객체지향 프로그래밍<br>
+        웹 프로그래밍<br>
+        데이터마이닝<br>
+    </div>
+
+    <div class="slide">
+        <div class="myslide">
+            <img src={% static 'project/images/slide1.jpg' %} width="300" height="450"> 
+        </div>    
+        <div class="myslide">
+            <img src={% static 'project/images/slide2.jpg' %} width="300" height="450"> 
+        </div>
+        <div class="myslide">
+            <img src={% static 'project/images/slide3.jpg' %} width="300" height="450"> 
+        </div>
+    </div>
+        
+        
+
+    <div class="inform">
+        이메일 : 32187505@dankook.ac.kr <br>
+        전화번호 : 010-0000-0000<br>
+    </div>
+
+</body>
+</html>
+© 2022 GitHub, Inc.
+Terms
+Privacy
+Security
